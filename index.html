@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name = "UTF-8" />
+        <meta name = "viewpor" content = "width-device">
+        <title> Document</title>
+        <link rel = "stylesheet" href="./style.css">
+        <script>
+            function setName() {
+                const nameField = document.getElementById("username");
+                const name = nameField.value;
+                const title = document.getElementById("profile-link");
+                title.innerText = name + " Profile";
+            }
+
+            function setImage() {
+                const imageField2 = document.getElementById("url");
+                const nameimage = imageField2.value;
+                profileImage.style.backgroundImage = `url(${nameimage})`;
+            }
+        </script>
+    </head>
+    <body>
+        <main>
+            <div id="profileImage" class="parent">
+                <div class="child">
+                    <div class="text">66070150</div>
+                </div>
+            </div>
+            <a id="profile-link" href="https://github.com/zacky3006">DrowningToast Profile</a>
+            <div class="row">
+                <p>Set profile name</p>
+                <input id="username" type="text" />
+                <button onclick="setName()">Click me!</button>
+            </div>
+            <div class="row">
+                <p>Set profile picture</p>
+                <input id="url" type="text" />
+                <button onclick="setImage()">Click me!</button>
+            </div>
+            <div class="gallery">
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+                <div id="extend-row" class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+            </div>
+        </main>
+    </body>
+</html>

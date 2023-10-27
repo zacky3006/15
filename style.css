@@ -1,0 +1,155 @@
+main {
+    width: 1024px;
+    min-height: 100vh;
+    border: 2px black solid;
+    margin: 0px auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+}
+
+.parent{
+    position: relative;
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-image: url(https://avatars.githubusercontent.com/u/114403439?v=4);
+    background-size: cover;
+    border: 2px black;
+    border-radius: 9999px;
+}
+
+.child {
+    position: absolute;
+    top: 125px;
+    left: 150px;
+    background-color: red;
+    width: 75px;
+    height: 75px;
+    border: 2px black;
+    border-radius: 9999px;
+}
+
+.child .text {
+    position: absolute;
+    top: 40%;
+    left: 7%;
+}
+
+p {
+    margin: 0;
+}
+
+.row {
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    gap: 0px 20px;
+    align-items: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4,1fr);
+    gap: 16px;
+    width: 900px;
+    height: 1000px;
+    margin-top: 1.5rem;
+}
+
+.gallery .image {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+#extend-col {
+    grid-column: span 2;
+    background-color: red;
+    
+}
+
+#extend-row {
+    grid-row: span 2;
+    background-color: red;
+    height: 100%;
+}
+
+#profile-link {
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#profile-link:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.gallery .image:nth-child(1) {
+    background-image: url('jojo1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery .image:nth-child(2) {
+    background-image: url('jojo2.jpe');
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery .image:nth-child(3) {
+    background-image: url('jojo4.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery .image:nth-child(4) {
+    background-image: url('jojo3.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery .image:nth-child(5) {
+    background-image: url('jojo5.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery .image:nth-child(6) {
+    background-image: url('jojo6.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery .image:nth-child(7) {
+    background-image: url('jojo7.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+
+.gallery .image:nth-child(8) {
+    background-image: url('jojo8.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery .image:nth-child(9) {
+    background-image: url('jojo9.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery .image:nth-child(10) {
+    background-image: url('jojo10.jpg');
+    background-position: center;
+    background-size: cover;
+}
